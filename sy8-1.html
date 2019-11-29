@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>增加快递信息</title>
+<style>
+	body{
+		color:aliceblue;
+	}
+	h2{
+		font-size:24px;
+		text-align:center;
+	}
+	form{
+		background-color:#363636;
+		width:700px;
+		height:600px;
+		border:1px solid #FDFDFD;
+		margin:0 auto;
+	}
+	#s1{
+		width:600px;
+		height:100px;
+		margin:0 auto;
+	}
+	#s2{
+		width:600px;
+		height:210px;
+		margin:0 auto;
+	}
+	.f1{
+		border-spacing:15px; 
+	}
+	.f2{
+		border-spacing:14px; 
+	}
+	.f4{
+		font-size:10px;
+	}
+	.f5{
+		border-spacing:5px;
+	}
+	#s3{
+		width:600px;
+		height:100px;
+		margin:0 auto;
+	}
+	[name="weight"]{
+		height:15px;
+		width:40px;
+	}
+	[name="count"]{
+		height:15px;
+		width:40px;
+	}
+	[name="huowumingcheng"]{
+		height:15px;
+		width:300px;
+	}
+	[type="left"],[type="right"]{
+		display:block;
+	}
+	[type="left"]{
+		width:79px;
+		height:26px;
+		background-image:url("images/6L.png");
+		border:none;
+	}
+	[type="right"]{
+		width:79px;
+		height:26px;
+		background-image:url("images/2U.png");
+		border:none;
+	}
+	.f3{
+		border-spacing:10px;
+		margin:0 auto;
+	}
+</style>
+</head>
+
+<body>
+<form>
+<h2>增加快递信息</h2>
+	<fieldset id="s1">
+		<legend>发货单</legend>
+		<table class="f1">
+		<tr>
+		<td>发货人：</td>
+		<td><input type="text" name="fahuoren"></td>
+		<td>地址：</td>
+		<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+		<td>电话：</td>
+		<td><input type="text" name="telephone"></td>
+		<td>邮编：</td>
+		<td><input type="text" name="post"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset id="s2">
+		<legend>收货单</legend>
+		<table class="f2">
+		<tr>
+		<td>发货人：</td>
+		<td><input type="text" name="fahuoren"></td>
+		<td>地址：</td>
+		<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+		<td>电话：</td>
+		<td><input type="text" name="telephone"></td>
+		<td>邮编：</td>
+		<td><input type="text" name="post"></td>
+		</tr>		
+			<tr>
+			<td>地区：</td>
+		<td><select>
+			<option>北京</option>
+			<option>杭州</option>
+			<option>南京</option>
+			<option>上海</option>
+			</select>
+				</td>
+			</tr>
+			<tr>
+			<td>包装：</td>
+		<td class="f4"><input type="checkbox" name="pack" value="支付宝" id="zhifubao">
+			<label for="zhifubao">支付宝</label>
+			<input type="checkbox" name="pack" value="现金" id="xianjin">
+			<label for="现金">现金</label>
+			<input type="checkbox" name="pack" value="网银" id="wangyin">
+			<label for="wangyin">网银</label>
+			<input type="checkbox" name="pack" value="ATM" id="atm">
+			<label for="atm">ATM</label></td>
+			</tr>
+			<tr>
+			<td>付款方式：</td>
+		<td class="f4"><input type="radio" name="pay" value="纸箱" id="zhixiang">
+			<label for="zhixiang">纸箱</label>
+			<input type="radio" name="pay" value="木箱" id="muxiang">
+			<label for="muxiang">木箱</label>
+			<input type="radio" name="pay" value="快递袋" id="kuaididai">
+			<label for="kuaididai">快递袋</label>
+			<input type="radio" name="pay" value="其他" id="qita">
+			<label for="qita">其他</label></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset id="s3">
+		<legend>货物信息</legend>
+		<table class="f5">
+		<td>货物名称：</td>
+		<td><input type="text" name="huowumingcheng"></td>
+		</table>
+		<table class="f5">
+		<td>数量：</td>
+		<td><input type="text" name="count"></td>
+		<td>重量：</td>
+		<td><input type="text" name="weight"></td>
+		<td>发货时间：</td>
+		<td><input type="text" name="time"></td>
+		</table>
+	</fieldset>
+	<table class="f3">
+	<td><input type="left" name="left"></td>
+	<td><input type="right" name="right"></td>
+	</table>
+</form>
+</body>
+</html>

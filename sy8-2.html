@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>内联框布局页面</title>
+	<style>
+		*{  
+			margin:0;
+		    padding:0;
+		    list-style:none;
+		    text-decoration:none;}
+		body{
+			background-image: url("images/mxcp1.jpg");
+		}
+		.cright{
+			width:800px;
+			height:700px;
+			margin-left:200px;
+		}
+		.content{
+			width:80%;
+			height:580px;
+		}
+		.cleft li{
+			width:100px;
+			line-height:106px;
+			height:103px;
+		}
+		.cleft{
+			maegin-top:30px;
+			margin-left:30px;
+			float:left;
+			width:149px;
+			height:410px;
+		}
+		iframe{
+			width:100%;
+			height:580px;
+		}
+		</style>
+</head>
+
+<body>
+<div class="content">
+	<table>
+	<td>
+	<div class="cleft">
+	<ul>
+	<li><a href="http://www.tmall.com" target="box"><img src="images/t1.png"></a></li>
+	<li><a href="http://www.baidu.com" target="box"><img src="images/t2.png"></a></li>
+	<li><a href="http://www.jd.com" target="box"><img src="images/t3.png"></a></li>
+	<li><a href="http://www.sina.com" target="box"><img src="images/t4.png"></a></li>
+	</ul>
+	</div>
+	</td>
+	<td>
+	<div class="cright">
+	<iframe src="http://www.tmall.com" name="box"></iframe>
+	</div>
+	</td>
+	</table>
+</div>
+	
+</body>
+</html>
